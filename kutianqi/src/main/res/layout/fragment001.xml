@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/wu_day"
+    android:id="@+id/view"
+    >
+
+
+    <!--首页-->
+
+    <ScrollView
+        android:scrollbars="none"
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--标题栏-->
+            <LinearLayout
+                android:id="@+id/LL001"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_settings"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1.2"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/new_topic_has_photo"/>
+
+                <LinearLayout
+                    android:id="@+id/LL002"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_location"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@mipmap/title_location"/>
+
+                    <TextView
+                        android:id="@+id/textView_yourcity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="北京市"
+                        android:textColor="#fff"
+                        android:textSize="24sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView_share"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/common_title_share_pressed"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL003"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/LL006"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button_alarm"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="雾霾预警"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_look_background" />
+
+                    <Button
+                        android:id="@+id/button_ziwaixian"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="紫外线: 最弱"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_look_background" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_date"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:text="20151111"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+
+            <!--今天天气详情-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/LL004"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_today_weather"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:text="晴转多云"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="120dp"/>
+
+                    <TextView
+                        android:id="@+id/textView_today_temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:textColor="#fff"
+                        android:textSize="50sp"
+                        android:layout_marginLeft="30dp"/>
+                    <!--android:text="2~18℃"-->
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="0.7"
+                            android:layout_marginTop="5dp"
+                            android:src="@mipmap/main_icon_wind"/>
+
+                        <TextView
+                            android:id="@+id/textView_middle_wind"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="6级"
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            />
+
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="20sp"
+                            android:layout_weight="0.7"
+                            android:layout_marginTop="5dp"
+                            android:src="@mipmap/main_icon_pressure"/>
+
+                        <TextView
+                            android:id="@+id/textView_middle_press"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="120hPa"
+                            android:textSize="20sp"
+                            android:textColor="#fff"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL005"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_middle_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4.9"
+                        android:src="@mipmap/img_tx"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView_jiangshui"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="降水率: 2"
+                            android:textColor="#fff"
+                            android:textSize="17sp"
+                            android:layout_marginTop="0dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--分割线-->
+            <LinearLayout
+                android:id="@+id/LL010"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#a3a1a1"
+                android:orientation="horizontal"></LinearLayout>
+
+            <!--今明两天的-->
+            <LinearLayout
+                android:id="@+id/LL007"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/LL008"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="今天"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/textView_buttom_today_weather"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="晴转多云"
+                            android:textColor="#fff" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_buttom_today_temperature"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="2到18"
+                            android:textColor="#fff" />
+                        <!--android:text="2~18℃"-->
+
+                        <ImageView
+                            android:id="@+id/imageView_buttom_today_weather"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="40dp"
+                            android:src="@mipmap/btn_biglove_check" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#9e9ea4"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL009"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="明天"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/textView_buttom_tomorrow_weather"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="阴转小雨"
+                            android:textColor="#fff" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_buttom_tomorrow_temperature"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="2到18"
+                            android:textColor="#fff" />
+                        <!--android:text="2~18℃"-->
+
+                        <ImageView
+                            android:id="@+id/imageView_buttom_tomorrow_weather"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="40dp"
+                            android:src="@mipmap/btn_biglove_check" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#a3a1a1"-->
+                <!-->-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal"
+                android:background="#a7a1a1"
+                android:layout_marginBottom="10dp"
+                ></LinearLayout>
+
+            <!--额外加的-->
+
+            <Button
+                android:id="@+id/button_refresh_fragment01"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+                android:text="点击刷新"
+                android:textSize="20sp"
+                android:background="#2f000000"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="50dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+

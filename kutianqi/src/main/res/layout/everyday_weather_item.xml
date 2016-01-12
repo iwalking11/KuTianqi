@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#44c8defa"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.CardView-->
+        <!-- -->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <!--/arLayout>-->
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11月12日"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/week_day"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="星期四"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/textView_buttom_today_weather"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="雾转霾"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/text_wind_des"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="微风"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/text_wind_power"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="3级"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/textView_day_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textview_day"
+                android:layout_alignStart="@+id/textview_day"
+                android:layout_below="@+id/textview_day"
+                android:layout_marginTop="48dp"
+                android:text="11℃"
+                android:textColor="#fff" />
+            <!--android:layout_alignRight="@+id/imageView_buttom_today_weather"-->
+            <!--android:layout_alignEnd="@+id/imageView_buttom_today_weather"-->
+            <TextView
+                android:id="@+id/textView_nignt_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView_buttom_today_weather"
+                android:layout_centerHorizontal="true"
+                android:text="2℃"
+                android:textColor="#fff" />
+            <!--android:layout_alignLeft="@+id/textView_day_temperature"-->
+            <!--android:text="2~18℃"-->
+
+            <ImageView
+                android:id="@+id/imageView_buttom_today_weather"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView_day_temperature"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/ww1" />
+
+            <TextView
+                android:id="@+id/textview_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView_buttom_today_weather"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/imageView_buttom_today_weather"
+                android:layout_marginTop="16dp"
+                android:text="白天"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_nignt_temperature"
+                android:layout_alignStart="@+id/textView_nignt_temperature"
+                android:layout_alignTop="@+id/textview_day"
+                android:text="夜晚"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/textView_nignt_temperature"
+                android:layout_alignStart="@+id/textView_nignt_temperature"
+                android:layout_alignTop="@+id/imageView_buttom_today_weather"
+                android:src="@mipmap/ww1" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView_buttom_today_weather"
+                android:layout_marginTop="26dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/ww1" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="48dp"
+                    android:text="11℃"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/imageView3"
+                    android:layout_centerHorizontal="true"
+                    android:text="2℃"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imageView3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/imageView3"
+                    android:layout_marginTop="16dp"
+                    android:text="白天"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:src="@mipmap/ww1" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textview_day_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView_buttom_today_weather"
+                android:layout_alignStart="@+id/imageView_buttom_today_weather"
+                android:layout_alignTop="@+id/relativeLayout"
+                android:text="多云"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_night_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView2"
+                android:layout_alignTop="@+id/textview_day_weather"
+                android:text="多云"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:background="#a49d9d"
+            android:layout_width=" 1dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

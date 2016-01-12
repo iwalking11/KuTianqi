@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main_layout"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_main_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--android:background="@mipmap/blur_bg0_fine_day"-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:id="@+id/container"
+            />
+
+        <RadioGroup
+            android:id="@+id/main_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="#552c2d35"
+            >
+
+            <RadioButton
+                android:onClick="onclick"
+                android:id="@+id/main_tab_bar_one"
+                style="@style/main_tab_bar"
+                android:textColor="#fff"
+                android:layout_marginTop="6dp"
+                android:drawableTop="@drawable/selector_main_tab_bar_firstpage"
+                android:text="首页" />
+
+            <RadioButton
+                android:onClick="onclick"
+                android:id="@+id/main_tab_bar_two"
+                style="@style/main_tab_bar"
+                android:textColor="#fff"
+                android:layout_marginTop="6dp"
+                android:drawableTop="@drawable/selector_main_tab_bar_friends"
+                android:text="预见" />
+
+            <RadioButton
+                android:onClick="onclick"
+                android:id="@+id/main_tab_bar_three"
+                style="@style/main_tab_bar"
+                android:textColor="#fff"
+                android:layout_marginTop="6dp"
+                android:drawableTop="@drawable/selector_main_tab_bar_love"
+                android:text="时光" />
+
+            <RadioButton
+                android:onClick="onclick"
+                android:id="@+id/main_tab_bar_four"
+                style="@style/main_tab_bar"
+                android:textColor="#fff"
+                android:layout_marginTop="6dp"
+                android:drawableTop="@drawable/selector_main_tab_bar_person"
+                android:text="心情" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

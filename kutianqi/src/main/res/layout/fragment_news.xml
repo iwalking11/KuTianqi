@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:menu="@menu/main"
+    tools:context="com.gaopinwei.kutianqi.fragment.NewsFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_news"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/empty_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="暂时没有数据哦，下拉刷新或者重新加载吧~"
+            />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

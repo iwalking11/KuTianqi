@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/history_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_self"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="#79b0f4"
+        android:textSize="18dp"
+        android:text="历史上的今天居然发生了这么多事情呢！\n  今天你有什么有意义的事情发生么？\n 点我去记录吧~ O(∩_∩)O"
+        />
+
+</LinearLayout>

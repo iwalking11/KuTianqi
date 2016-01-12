@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/history_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_self"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="#79b0f4"
+        android:text="时光容易把人抛，\n红了樱桃，绿了芭蕉。\n日子流水般一天天滑过，\n每天都会发生很多故事。\n 历史上的今天又发生了大事件呢？\n下拉看看......\n 有惊喜哟~"
+        android:textSize="18dp"
+        />
+
+</LinearLayout>

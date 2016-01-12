@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item01"
+            android:icon="@mipmap/ic_cehua01"
+            android:title="首页"
+
+            />
+        <item
+            android:id="@+id/nav_item02"
+            android:icon="@mipmap/ic_cehua02"
+            android:title="身边新鲜事" />
+        <item
+            android:id="@+id/nav_item03"
+            android:icon="@mipmap/ic_cehua03"
+            android:title="选择城市" />
+        <!--<item-->
+            <!--android:id="@+id/nav_item04"-->
+            <!--android:icon="@mipmap/ic_cehua04"-->
+            <!--android:title="条目四" />-->
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/ic_cehua03"
+                android:title="写日记" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/ic_cehua03"
+                android:title="扫一扫" />
+        </menu>
+    </item>
+
+</menu>
